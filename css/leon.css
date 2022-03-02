@@ -423,3 +423,52 @@ hr {
 }
 
 /*end about*/
+/*start contact*/
+#contact {
+    background-color: #eee;
+    padding         : 60px 0;
+}
+
+#contact .container {
+    margin    : auto;
+    text-align: center;
+}
+
+#contact .cont {
+    margin-top: 100px;
+}
+
+.cont h2 {
+    font-size     : 2.5em;
+    letter-spacing: -3px;
+    color         : #2c4755;
+    margin-bottom : 0;
+}
+
+.cont p:first-of-type a {
+    text-decoration: none;
+    font-size      : 2.5em;
+    font-weight    : bold;
+    letter-spacing : -3px;
+    color          : var(--greena);
+}
+
+.cont i {
+    font-size  : 1em;
+    color      : #2c4755;
+    margin-left: 2px;
+}
+
+@media (max-width:600px) {
+
+    .cont h2,
+    .cont p:first-of-type a {
+        font-size: 1.5em;
+    }
+
+    #contact .cont {
+        margin-top: 50px;
+    }
+}
+
+/*end contact*/
