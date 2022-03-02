@@ -333,3 +333,93 @@ header .container {
 }
 
 /*end portfolio*/
+/*start about*/
+#about {
+    padding: 60px 0 130px 0;
+}
+
+#about .container {
+    display       : flex;
+    text-align    : center;
+    align-items   : center;
+    flex-direction: column;
+    width         : 80%;
+    margin        : auto;
+}
+
+
+.aboutgrid {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    text-align     : start;
+    margin-top     : 100px;
+}
+
+#about img {
+    width: 260px;
+}
+
+#about .text {
+    width      : 50%;
+    line-height: 1.5em;
+}
+
+#about .text :first-child {
+    font-weight  : 800;
+    margin-bottom: 60px;
+}
+
+hr {
+    border-color: var(--greena);
+}
+
+.image2 {
+    position: relative;
+}
+
+.image2::before {
+    content         : '';
+    position        : absolute;
+    width           : 100px;
+    height          : 120%;
+    background-color: #eee;
+    top             : -40px;
+    z-index         : -1;
+    left            : -41px;
+}
+
+.image2::after {
+    content         : '';
+    position        : absolute;
+    width           : 85px;
+    height          : 70%;
+    background-color: transparent;
+    top             : -42px;
+    right           : -122px;
+    border-left     : solid var(--greena) 100px;
+    border-bottom   : solid var(--greena) 73px;
+    z-index         : -1;
+}
+
+
+
+
+@media (max-width:1000px) {
+    .aboutgrid {
+        flex-direction: column;
+        text-align    : center;
+    }
+
+    #about .text {
+        width     : 100%;
+        margin-top: 50px;
+    }
+
+    .image2::before,
+    .image2::after {
+        display: none;
+    }
+}
+
+/*end about*/
