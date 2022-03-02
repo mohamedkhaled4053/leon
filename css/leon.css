@@ -472,3 +472,21 @@ hr {
 }
 
 /*end contact*/
+/*footer*/
+#footer {
+    padding         : 25px;
+    text-align      : center;
+    background-color: #2c4755;
+    color           : white;
+    font-size       : 1.3em;
+}
+
+#footer span {
+    color: var(--greena);
+}
+
+@media (max-width:600px) {
+    #footer {
+        font-size: 1em;
+    }
+}
