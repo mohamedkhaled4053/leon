@@ -41,3 +41,116 @@ i {
 }
 
 /*end common css*/
+/*start header*/
+header {
+    background-color: rgb(255, 255, 255);
+    display         : flex;
+    justify-content : center;
+    padding         : 15px;
+    position        : relative;
+}
+
+
+header .container {
+    display        : flex;
+    justify-content: space-between;
+    width          : 85%;
+}
+
+
+.icon {
+    display        : flex;
+    width          : 50px;
+    height         : 100%;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items    : flex-end;
+}
+
+.icon span {
+    background-color: black;
+    width           : 100%;
+    height          : 3px;
+    transition      : 0.2s;
+}
+
+.icon :nth-child(2) {
+    width: 50%;
+}
+
+.icon :nth-child(3) {
+    height: 4px;
+}
+
+.links:hover .icon span {
+    width: 100%;
+}
+
+.logo {
+    width: 70px;
+}
+
+
+.links ul {
+    visibility      : hidden;
+    opacity         : 0;
+    transition      : 0.2s;
+    position        : absolute;
+    background-color: #ccc;
+    padding         : 0px;
+    right           : 10%;
+    width           : 20vw;
+    margin          : 0;
+    top             : 120%;
+}
+
+.links:hover ul {
+    visibility: visible;
+    opacity   : 1;
+    top: 100%;
+}
+
+@media (max-width:767px) {
+    .links ul {
+        font-size: 0.75em;
+    }
+}
+
+@media (max-width:992px) {
+    .links ul {
+        width: 40vw;
+    }
+}
+
+.links ul::before {
+    right           : 0px;
+    content         : '';
+    height          : 57px;
+    background-color: transparent;
+    position        : absolute;
+    bottom          : 100%;
+    width           : 25%;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li:not(:last-child) {
+    border-bottom: solid 1px;
+}
+
+.links a {
+    text-decoration: none;
+    color          : black;
+    font-size      : 1.2em;
+    display        : block;
+    padding        : 15px;
+    transition     : 0.2s;
+}
+
+.links li:hover a {
+    margin-left: 20px;
+}
+
+/*end header*/
