@@ -1,0 +1,43 @@
+/*common css*/
+* {
+    box-sizing     : border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --greena: #10cab7
+}
+
+body {
+    font-family: 'work sans', sans-serif;
+}
+
+i {
+    color    : var(--greena);
+    font-size: 3em;
+}
+
+.spicial-h {
+    color    : #8080805e;
+    font-size: 6em;
+    margin   : 0;
+}
+
+.spicial-h+p {
+    margin-top: -35px;
+    font-size : 17pt;
+    color     : #141414a6;
+}
+
+@media (max-width:500px) {
+    .spicial-h {
+        font-size: 3em;
+    }
+
+    .spicial-h+p {
+        font-size : 8.5pt;
+        margin-top: -15px;
+    }
+}
+
+/*end common css*/
