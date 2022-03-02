@@ -154,3 +154,28 @@ header .container {
 }
 
 /*end header*/
+/*start landing*/
+.land {
+    background     : url(https://elzerowebschool.github.io/HTML_And_CSS_Template_One/images/landing.jpg);
+    background-size: cover;
+    height         : calc(100vh - 58px);
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.hello {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    width         : 60%;
+    max-width     : 400px;
+    text-align    : center;
+}
+
+.hello h1 {
+    color        : var(--greena);
+    margin-bottom: 0px;
+}
+
+/*end landing*/
